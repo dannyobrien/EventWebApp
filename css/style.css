@@ -1,0 +1,21 @@
+body{           /*manages the whole page*/
+background: #ecf0f1;
+font-family: 'Rozha One', serif;
+
+}
+#container{      /*Manages the container div attributes*/
+
+    text-align:center;
+}
+#head{      /*Manages the head div attributes*/
+    font-size: 20px;
+    color:grey;
+}
+
+table{      /*manages the table attributes*/
+    text-align:center;
+    color: gray;
+}
+
+
+
