@@ -1,11 +1,12 @@
 body{           /*manages the whole page*/
-background: #ecf0f1;
+background: #ECECEC;
 font-family: 'Rozha One', serif;
 
 }
 #container{      /*Manages the container div attributes*/
 
     text-align:center;
+
 }
 #head{      /*Manages the head div attributes*/
     font-size: 20px;
@@ -13,9 +14,19 @@ font-family: 'Rozha One', serif;
 }
 
 table{      /*manages the table attributes*/
-    text-align:center;
-    color: gray;
+    width: 100%;
+    text-align:left;
+    color: #245580;
+    font-size: 18px;
 }
 
+h2{
+    text-align: center;
+    padding-bottom: 50px;
+}
 
+p{
+
+    font-size: 18px;
+}
 

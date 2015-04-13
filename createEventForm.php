@@ -17,7 +17,7 @@ require 'ensureUserLoggedIn.php';
     <body>
         <?php require 'header.php' ?>
         <?php require 'mainMenu.php' ?>
-        
+         <div class="container">
         <h1>Create Event Form</h1>
         <?php 
         if (isset($errorMessage)) {
@@ -86,6 +86,7 @@ require 'ensureUserLoggedIn.php';
             </table>
 
         </form>
+    </div>
         <?php require 'footer.php'; ?>
         <?php require 'scripts.php'; ?>   
     </body>

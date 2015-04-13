@@ -20,7 +20,7 @@ $statement = $gateway->getlocations();
     <body>
         <?php require 'header.php' ?>
         <?php require 'mainMenu.php' ?>
-        
+         <div class="container">
         <?php
         if (isset($message)) {
             echo '<p>'.$message.'</p>';
@@ -51,8 +51,8 @@ $statement = $gateway->getlocations();
                     echo '<td>' . $row['man_mobile'] . '</td>';
                     echo '<td>'
                     . '<a href="viewLocation.php?id='.$row['id'].'">View</a> '
-                    . '<a href="editEventForm.php?id='.$row['id'].'">Edit</a> '
-                    . '<a class="deleteEvent" href="deleteEvent.php?id='.$row['id'].'">Delete</a> '
+                    . '<a href="editLocationForm.php?id='.$row['id'].'">Edit</a> '
+                    . '<a class="deleteLocation" href="deleteLocation.php?id='.$row['id'].'">Delete</a> '
                     . '</td>';
                     echo '</tr>';
 
@@ -62,6 +62,7 @@ $statement = $gateway->getlocations();
             </tbody>
         </table>
         <p><a href="createLocationForm.php">Add Location</a></p>
+         </div>
         <?php require 'footer.php'; ?>
         <?php require 'scripts.php'; ?>   
     </body>

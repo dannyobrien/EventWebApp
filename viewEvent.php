@@ -30,7 +30,7 @@ $statement = $gateway->getEventById($id);
     <body>
         <?php require 'header.php' ?>
         <?php require 'mainMenu.php' ?>
-        
+        <div class="container"> 
         <?php
         if (isset($message)) {
             echo '<p>'.$message.'</p>';
@@ -77,6 +77,7 @@ $statement = $gateway->getEventById($id);
             <a class="deleteEvent" href="deleteEvent.php?id=<?php echo $row['id']; ?>">
                 Delete Event</a>
         </p>
+        </div>
         <?php require 'footer.php'; ?>
         <?php require 'scripts.php'; ?>  
     </body>

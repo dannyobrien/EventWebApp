@@ -14,7 +14,7 @@ class Connection {
             //$host = "localhost";
             //$database = "n00134452";
             //$username = "root";
-            //$password = "";
+            //$password = "root";
 
             $dsn = "mysql:host=" . $host . ";dbname=" . $database;
             Connection::$connection = new PDO($dsn, $username, $password);

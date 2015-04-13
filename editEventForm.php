@@ -34,7 +34,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
     <body>
         <?php require 'header.php' ?>
         <?php require 'mainMenu.php' ?>
-        
+        <div class="container"> 
         <h1>Edit Event Form</h1>
         <?php
         if (isset($errorMessage)) {
@@ -108,7 +108,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
                                 }
                                 else echo $row['attendees'];
                             ?>" />
-                            <span id="attendesError" class="error">
+                            <span id="attendeesError" class="error">
                                 <?php
                                 if (isset($errorMessage) && isset($errorMessage['attendees'])) {
                                     echo $errorMessage['attendees'];
@@ -169,7 +169,6 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
                                 ?>
                             </span>
                         </td>
-                    </tr>
                     <tr>
                         <td></td>
                         <td>
@@ -180,6 +179,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
             </table>
 
         </form>
+    </div>
         <?php require 'footer.php'; ?>
         <?php require 'scripts.php'; ?>  
     </body>

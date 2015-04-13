@@ -14,11 +14,7 @@ $gateway = new EventTableGateway($connection);
 
 $id = $_POST['id'];
 $title = $_POST['title'];
-
-$email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-$emailValid = filter_var($email, FILTER_VALIDATE_EMAIL);
-
-//$email = $_POST['email'];
+$email = $_POST['email'];
 $location = $_POST['location'];
 $attendees = $_POST['attendees'];
 $date = $_POST['date'];

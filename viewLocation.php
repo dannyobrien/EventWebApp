@@ -30,7 +30,7 @@ $statement = $gateway->getLocationById($id);
     <body>
         <?php require 'header.php' ?>
         <?php require 'mainMenu.php' ?>
-        
+        <div class="container"> 
         <?php
         if (isset($message)) {
             echo '<p>'.$message.'</p>';
@@ -69,11 +69,12 @@ $statement = $gateway->getLocationById($id);
             </tbody>
         </table>
         <p>
-            <a href="editEventForm.php?id=<?php echo $row['id']; ?>">
-                Edit Event</a>
-            <a class="deleteEvent" href="deleteEvent.php?id=<?php echo $row['id']; ?>">
-                Delete Event</a>
+            <a href="editLocationForm.php?id=<?php echo $row['id']; ?>">
+                Edit Location</a>
+            <a class="deleteLocation" href="deleteLocation.php?id=<?php echo $row['id']; ?>">
+                Delete Location</a>
         </p>
+        </div>
         <?php require 'footer.php'; ?>
         <?php require 'scripts.php'; ?>  
     </body>

@@ -12,14 +12,20 @@ require 'ensureUserLoggedIn.php';
 $connection = Connection::getInstance();
 $gateway = new LocationTableGateway($connection);
 
+$id = $_POST['id'];
 $name = $_POST['name'];
 $address = $_POST['address'];
 $maxAttendees = $_POST['maxAttendees'];
 $man_name = $_POST['man_name'];
 $man_email = $_POST['man_email'];
-$man_mobile= $_POST['man_mobile'];
+$man_mobile = $_POST['man_mobile'];
 
-$gateway->insertLocation($name, $address, $maxAttendees, $man_name, $man_email, $man_mobile);
+$gateway->updateLocation($id, $name, $address, $maxAttendees, $man_name, $man_email, $man_mobile);
 
-header('Location: viewLocations.php');
+header('Location: viewLocation.php');
+
+
+
+
+
 
